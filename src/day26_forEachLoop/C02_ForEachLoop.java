@@ -16,12 +16,7 @@ public class C02_ForEachLoop {
         System.out.println(sayılar);
 
 
-        for (int each: arr
-             ) {
-            if (each%3!=0){
-                System.out.println("3 e bölünemeyen sayılar :"+each);
-            }
 
-        }
+
     }
 }

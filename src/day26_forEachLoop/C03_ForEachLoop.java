@@ -13,5 +13,22 @@ public class C03_ForEachLoop {
 
         List<String> ortakElemanlar=new ArrayList<>();
 
+        for (String each: array1
+             ) {
+            for (String each2: array2
+                 ) {
+                if (each.equals(each2)){
+                    ortakElemanlar.add(each);
+                }
+            }
+
+        }
+        if (ortakElemanlar.isEmpty()){
+            System.out.println("ortak eleman yoktur");
+        } else{
+            System.out.println("iki array için ortak elemanlar şunlardır :"+ortakElemanlar);
+        }
+
+
     }
 }
