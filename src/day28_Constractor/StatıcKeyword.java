@@ -1,4 +1,4 @@
-package day27_Constractor_Keyword;
+package day28_Constractor;
 
 public class StatıcKeyword {
     static int sayı1;
