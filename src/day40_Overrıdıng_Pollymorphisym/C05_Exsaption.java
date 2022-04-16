@@ -1,5 +1,6 @@
 package day40_Overrıdıng_Pollymorphisym;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class C05_Exsaption {
@@ -12,8 +13,20 @@ public class C05_Exsaption {
         int toplam=0;
         do {
             System.out.println("lütfen toplamak ıstedıgınız sayıyı gırınız\nbitirmek için Q ya basınız");
-            int sayı= scan.nextInt();
-            toplam+=sayı;
+            int sayı= 0;
+
+
+            try {
+               sayı= scan.nextInt();
+               toplam+=sayı;
+            } catch (InputMismatchException e) {
+                String hatalıGiris=scan.next();
+                if (hatalıGiris.equalsIgnoreCase("q")){
+                    System.out.println("girdiğiniz sayıların toplamı = " +toplam);
+                    break;
+                } else
+                    System.out.println("hatalı giriş");
+            }
         }while (toplam<500);
     }
 }
