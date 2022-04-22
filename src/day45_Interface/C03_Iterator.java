@@ -25,7 +25,7 @@ public class C03_Iterator {
 
         System.out.println(liste );//for each dekı değişiklik kalıcı olmadı
 
-        Iterator ıtr=liste.iterator();
+
 
     }
 }
